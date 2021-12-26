@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Today News</title>
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">AT<span class="text-secondary font-weight-normal">News</span></h1>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dgreen navbar-dark py-2 py-lg-0 px-lg-5">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+            </div>
+            <div class="input-group ml-auto d-none d-lg-flex" style="width: 100%; max-width: 300px;">
+                <input type="text" class="form-control border-0" placeholder="Search here ...">
+                <div class="input-group-append">
+                    <button class="input-group-text bg-green text-dark border-0 px-3"><i
+                            class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+ <div class="container-fluid mt-5 pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h4 class="m-0 text-uppercase">News :</h4>
+                            <a class="text-secondar text-decoration-none" href="category.html">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="data"></div>
+            </div>
+            
+            <div class="col-lg-4">
+                <!-- wheathers -->
+                <div class="mb-3">
+                  <div class="section-title mb-0">
+                      <h4 class="m-0 text-uppercase">Wathers</h4>
+                  </div>
+                  <div class="bg-white p-3">
+                    <div class="card p-3 bg-black">
+                          <div class="d-flex">
+                             
+                            <h2 class="flex-grow-1 text-white" id="city">London</h2>
+                            <h6 id="time">16:08</h6>
+                        </div>
+                        <div class="d-flex flex-column temp mt-5 mb-3">
+                            <h1 class="mb-0 font-weight-bold"><img src="img/warm.png" height="17px"id="temp"> 13° C </h1> <span class="small grey" id="weather">Stormy</span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="temp-details flex-grow-1">
+                                <p class="my-1"> <img src="img/windy.png" height="17px"> <span> 40 km/h </span> </p>
+                                <p class="my-1"> <i class="fa fa-tint mr-2" aria-hidden="true"></i> <span> 84% </span> </p>
+                                <p class="my-1"> <img src="img/wind-power.png" height="17px"> <span> 0.2h </span> </p>
+                            </div>
+                            <div> <img src="img/stratuscumulus.png" width="100px;"> </div>
+                        </div>
+                    </div></div>                 
+                                     
+                          </div>  
+                           <!-- Tags -->
+                          <div class="mb-3">
+                              <div class="section-title mb-0">
+                                  <h4 class="m-0 text-uppercase font-weight-bold">Tags</h4>
+                              </div>
+                              <div class="bg-white border border-top-0 p-3">
+                                  <div class="d-flex flex-wrap m-n1">
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>                          <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                                      <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                                  </div>
+                              </div>
+                          </div>
+              </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  <!-- Footer -->
+<div class="container-fluid  bg-dgreen py-4">
+</div> 
+<script src="data2.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>
